@@ -1,51 +1,31 @@
 import React from "react";
-
+import check from"../assets/images/check(1).jpg"
+import Carousel from "../components/carousel";
+import Card from "../components/card";
 function Home() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            HLB BANK
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">
-                  Disabled
-                </a>
-              </li>
-            </ul>
+    <>
+    <Carousel/>
+      <div className="container mt-5">
+        <div className="my-5">
+          <h1 className="mx-auto text-center">What would you like to do?</h1>
+        </div>
+        <div className="row gx-5 gy-10">
+          <div className="col-6">
+          <Card text="card1" src={check} title="Transfer Funds"/>
+          </div>
+          <div className="col-6">
+          <Card text="card2" src={check} title="View all Customers"/>
           </div>
         </div>
-      </nav>
-    </div>
+
+        <div className="row ">
+          <div className="col-4 ">
+          <Card text="card3" src={check} title="Search a customer"/>
+          </div>
+      </div>
+      </div>
+    </>
   );
 }
 

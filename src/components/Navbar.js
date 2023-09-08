@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <div>
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-green">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary bg-green">
+        <div className="container-fluid">
+          <Link className="navbar-brand text-white" to="/">
             HLB BANK
-          </a>
+          </Link>
           <button
-            class="navbar-toggler text-light"
+            className="navbar-toggler text-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -18,28 +19,23 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon color-white"></span>
+            <span className="navbar-toggler-icon color-white"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link active text-white" aria-current="page" to="/">
                   Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/view">
+                  View
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-white" aria-disabled="true" >
-                  Disabled
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/history">
+                  History
                 </a>
               </li>
             </ul>
