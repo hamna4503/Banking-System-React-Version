@@ -4,3 +4,12 @@
 .color-white{
   color: white;
 }
+.carousel-item{
+  height:880px;
+}
+.carousel-item img{
+    object-fit: cover;
+    object-position: center center;
+    min-height: 880px;
+    max-height:880px;
+}

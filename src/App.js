@@ -4,54 +4,12 @@ import Home from "./components/home.js";
 import bank from "./assets/images/bank.jpg"
 import check from"./assets/images/check(1).jpg"
 import check2 from"./assets/images/check(2).jpg"
+import Navbar from "./components/Navbar";
+import currency from"./assets/images/currency.jpg";
 function App() {
   return (
     <div>
-      <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-green">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">
-            HLB BANK
-          </a>
-          <button
-            class="navbar-toggler text-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon color-white"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-white" aria-disabled="true" >
-                  Disabled
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      </div>
-
+      <Navbar/>
       <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -60,21 +18,21 @@ function App() {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={check2} class="d-block w-100" alt="..."/>
+      <img src={bank} class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={bank} class="d-block w-100" alt="heyy"/>
+      <img src={currency}class="d-block w-100" alt="heyy"/>
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={check} class="d-block w-100" alt="helklo"/>
+      <img src='https://images.livemint.com/img/2021/01/17/1600x900/PTI30-03-2020_000065B_1585738603793_1610864931154.jpg' class="d-block w-100" alt="helklo"/>
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
