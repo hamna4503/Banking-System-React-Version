@@ -1,5 +1,8 @@
+body{
+  background-color: #161f1b;
+}
 .bg-green{
-  background-color: #198754;
+  background-color: #09130e;
 }
 .color-white{
   color: white;
@@ -13,6 +16,10 @@
     min-height: 880px;
     max-height:880px;
 }
+.footer{
+  position: fixed;
+  bottom:0;
+}
 .card{
   height:40vh;
   font-size: 1rem;
@@ -20,4 +27,35 @@
 .card img{
   width: 100%;
   height:30vh;
+}
+.nav-link:hover{
+  padding-bottom: 0px;
+  border-bottom:3px solid rgb(5, 44, 5);
+}
+.profile-grid{
+  margin:5vh auto;
+  /* margin-bottom: 10vh; */
+  font-size:2rem;
+  border:2px solid white;
+  display: grid;
+  /* margin:auto; */
+  width:60vw;
+  height:70vh;
+  /* padding:2.5em; */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  border-radius:0.4em;
+}
+.profile-img{
+  height: 60%;
+  width:60%;
+  margin:auto;
+  object-position: center center;
+  border-radius: 0.50em;
+  padding: none;
+}
+.profile-info{
+  margin-top:20%;
+  text-align: left;
+  /* border:2px solid whiot */
 }

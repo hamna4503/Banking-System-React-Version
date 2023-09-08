@@ -8,7 +8,7 @@ function Home() {
     <Carousel/>
       <div className="container mt-5">
         <div className="my-5">
-          <h1 className="mx-auto text-center">What would you like to do?</h1>
+          <h1 className="mx-auto text-center text-white">What would you like to do?</h1>
         </div>
         <div className="row row-cols-auto">
           <div className="col-auto">

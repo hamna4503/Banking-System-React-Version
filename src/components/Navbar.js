@@ -30,12 +30,12 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="/view">
-                  View
+                  View Customers
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="/history">
-                  History
+                  Transfer History
                 </a>
               </li>
             </ul>
