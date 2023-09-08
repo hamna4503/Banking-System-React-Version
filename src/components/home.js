@@ -10,20 +10,18 @@ function Home() {
         <div className="my-5">
           <h1 className="mx-auto text-center">What would you like to do?</h1>
         </div>
-        <div className="row gx-5 gy-10">
-          <div className="col-6">
+        <div className="row row-cols-auto">
+          <div className="col-auto">
           <Card text="card1" src={check} title="Transfer Funds"/>
           </div>
-          <div className="col-6">
+          <div className="col-auto">
           <Card text="card2" src={check} title="View all Customers"/>
           </div>
-        </div>
 
-        <div className="row ">
-          <div className="col-4 ">
+          <div className="col-auto">
           <Card text="card3" src={check} title="Search a customer"/>
           </div>
-      </div>
+        </div>
       </div>
     </>
   );
