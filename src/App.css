@@ -1,6 +1,7 @@
-/* body{
-  background-color:whi;
-} */
+body{
+  margin:0;
+  padding:0;
+}
 .bg-green{
   background-color: #09130e;
 }
@@ -41,18 +42,18 @@
   margin:5vh auto;
   /* margin-bottom: 10vh; */
   font-size:2rem;
-  border:2px solid black;
+  border:2px solid white;
   display: grid;
   /* margin:auto; */
   width:60vw;
-  height:70vh;
+  /* height:70vh; */
   /* padding:2.5em; */
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   border-radius:0.4em;
 }
 .profile-img{
-  height: 60%;
+  height: 70%;
   width:60%;
   margin:auto;
   object-position: center center;
