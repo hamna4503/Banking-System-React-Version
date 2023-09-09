@@ -1,50 +1,81 @@
-import React from 'react'
-import bank from "../assets/images/bank.jpg"
-import check from"../assets/images/check(1).jpg"
-import check2 from"../assets/images/check(2).jpg"
-import currency from"../assets/images/currency.jpg";
+import React from "react";
+import bank from "../assets/images/bank.jpg";
+import check from "../assets/images/check(1).jpg";
+import check2 from "../assets/images/check(2).jpg";
+import currency from "../assets/images/currency.jpg";
 
 function Carousel() {
   return (
     <div id="carouselExampleCaptions" className="carousel slide">
-    <div className="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div className="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          className="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src={bank} className="d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img src={currency} className="d-block w-100" alt="heyy" />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img
+            src="https://images.livemint.com/img/2021/01/17/1600x900/PTI30-03-2020_000065B_1585738603793_1610864931154.jpg"
+            className="d-block w-100"
+            alt="helklo"
+          />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <img src={bank} className="d-block w-100" alt="..."/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src={currency}className="d-block w-100" alt="heyy"/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src='https://images.livemint.com/img/2021/01/17/1600x900/PTI30-03-2020_000065B_1585738603793_1610864931154.jpg' className="d-block w-100" alt="helklo"/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Previous</span>
-    </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next</span>
-    </button>
-  </div>
-  )
+  );
 }
 
-export default Carousel
+export default Carousel;

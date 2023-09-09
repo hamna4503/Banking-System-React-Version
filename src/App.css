@@ -8,29 +8,31 @@ body{
   color: white;
 }
 .carousel-item{
-  height:880px;
+  height:85vh;
 }
 .carousel-item img{
     object-fit: cover;
     object-position: center center;
-    min-height: 880px;
-    max-height:880px;
+    height:100%;
 }
 .footer{
-  position: fixed;
-  bottom:0;
+  height:20vh;
 }
 .card{
-  height:40vh;
+  height:45vh;
   font-size: 1rem;
+  /* margin-bottom:100px; */
 }
 .card img{
   width: 100%;
   height:30vh;
 }
-.nav-link:hover{
-  padding-bottom: 0px;
-  border-bottom:3px solid rgb(5, 44, 5);
+.card-container{
+  height:100%;
+}
+.green-hover:hover{
+  color:greenyellow !important;
+  cursor:pointer;
 }
 .profile-grid{
   margin:5vh auto;

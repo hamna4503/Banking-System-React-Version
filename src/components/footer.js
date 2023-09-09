@@ -5,9 +5,9 @@ function Footer() {
     <div className="container-fluid bg-dark text-white footer">
       <div className="container">
         <div className="row">
-          <div className="col-3 mx-auto my-2 ">
-            <p className="text-center">Contact us</p>
-            <p className="text-center">Bank Habib Limited</p>
+          <div className="col-auto mx-auto">
+            <p className="text-center green-hover">Contact us</p>
+            <p className="text-center green-hover">Bank Habib Limited</p>
           </div>
         </div>
       </div>
