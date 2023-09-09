@@ -21,15 +21,18 @@
 .card{
   height:45vh;
   font-size: 1rem;
-  /* margin-bottom:100px; */
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px 4px rgb(179, 177, 177);
+  transition:all 0.3s;
+}
+.card:hover{
+  transform:scale(1.1);
+  box-shadow: none;
 }
 .card img{
-  width: 100%;
   height:30vh;
 }
-.card-container{
-  height:100%;
-}
+
 .green-hover:hover{
   color:greenyellow !important;
   cursor:pointer;
@@ -38,7 +41,7 @@
   margin:5vh auto;
   /* margin-bottom: 10vh; */
   font-size:2rem;
-  border:2px solid white;
+  border:2px solid black;
   display: grid;
   /* margin:auto; */
   width:60vw;
@@ -61,3 +64,7 @@
   text-align: left;
   /* border:2px solid whiot */
 }
+/* .card-img-top{
+  width:100% !important;
+
+} */
