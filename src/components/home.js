@@ -8,7 +8,7 @@ function Home() {
       <Carousel />
       <div className="container mt-5 card-container">
         <div className="my-5">
-          <h1 className="text-center text-white green-hover">
+          <h1 className="text-center text-dark green-hover">
             What would you like to do?
           </h1>
         </div>
