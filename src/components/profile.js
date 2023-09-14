@@ -4,7 +4,7 @@ import person1 from "../assets/images/PERSON1.JPG"
 
 function Profile() {
   return (
-      <div class="container mt-5 mb-5 img-thumbnail border border-dark">
+      <div class="container mt-5 mb-5 profile-container">
         <h1 className='text-center text-dark pt-5 display-1 fw-bold'>Profile #123</h1>
         <div className='profile-grid'>
           <img className='profile-img img-thumbnail img-fluid p-0 mt-2 mr-0' src={person1}/>

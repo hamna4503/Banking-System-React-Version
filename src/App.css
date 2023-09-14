@@ -38,6 +38,11 @@ body{
   color:greenyellow !important;
   cursor:pointer;
 }
+.profile-container{
+  width: 50vw !important;
+  border-radius: 20px !important;
+  box-shadow: 4px 4px 4px 4px grey !important;
+}
 .profile-grid{
   margin:5vh auto;
   /* margin-bottom: 10vh; */
@@ -48,7 +53,7 @@ body{
   width:60vw;
   /* height:70vh; */
   /* padding:2.5em; */
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
   border-radius:0.4em;
 }
